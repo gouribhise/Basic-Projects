@@ -1,0 +1,156 @@
+h3 {
+  background-color: #babdb6;
+  border-left: 10px solid white;
+  width: 50%;
+  padding: 2%;
+  text-transform: capitalize;
+}
+h4 {
+  background-color: gray;
+  width: 60%;
+  padding: 2%;
+  border-left: 10px solid black;
+  text-transform: capitalize;
+}
+#cn {
+  width: 30%;
+}
+#main {
+  width: 100%;
+}
+#heading {
+  height: 10%;
+  background-color: black;
+  color: #fff;
+  margin: 100px;
+  margin: 0 auto;
+}
+#title {
+  padding-left: 10px;
+  font-family: "Anton";
+  font-size: 1.5em;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  justify-content: space-around;
+  height: 64%;
+  margin-top: 1%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  border-style: ridge;
+}
+
+#img-caption {
+  color: white;
+  background-color: black;
+}
+#quote {
+  padding: 10px;
+  font-size: 2em;
+  width: 40%;
+  background-color: #babdb6;
+  letter-spacing: 4;
+  overflow: auto;
+}
+#img-div,
+#quote {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#qs {
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+#quote::before {
+  font-size: 5vw;
+  content: open-quote;
+}
+#quote::after {
+  font-size: 5vw;
+
+  content: close-quote;
+}
+/***info****/
+#info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#contents {
+  border: 1px solid black;
+  width: 30%;
+  padding: 2%;
+}
+#tribute-info {
+  width: 60%;
+  background-color: lightgray;
+  margin-right: 1%;
+}
+#best {
+  width: 40%;
+  background-color: lightgray;
+  height: 30%;
+  font-size: 1.3em;
+}
+li {
+  margin: 1em 0;
+}
+
+#tribute-info,
+#best {
+  box-sizing: border-box;
+  padding: 10px;
+}
+/*****footer****/
+#footer {
+  margin-top: 1%;
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 6%;
+  padding: 2%;
+}
+
+/****media queries****/
+@media only screen and (max-width: 468px) {
+  #header {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  #quote {
+    display: block;
+    width: 100%;
+  }
+
+  #info {
+    flex-direction: column;
+    width: 100%;
+  }
+  #tribute-info,
+  #best {
+    width: 100%;
+  }
+  #best {
+    margin-top: 2%;
+  }
+
+  #contents {
+    width: 90%;
+  }
+}
