@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Survey Form Page" />
+    <meta name="author" content="Gouri Bhise" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+ </head>
+
+</head>
+<body>
+  <div id="header">
+    <h1 id="title">Pre Course Survey</h1>
+    <p id="description">We are holding this survey to get the basic
+      information about our students like who they are? Do they have any experience of python.</p>
+  </div>
+<div id="main">
+  <form id="survey-form">
+  <label for="name-label" id="name-label">Name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name"/ pattern="[a-z]" title="Enter only letters" required><br>
+    <label for="email-label" id="email-label">Email:</label><br>
+    <input type="email" id="email" placeholder="Enter your email"/ required><br>
+    <label for="number-label" id="number-label">Age:</label><span style="font-size:10px;">(optional)</span><br>
+    <input type="number" id="number" placeholder="Age" min="12" max="90" pattern=[0-9]/><br>
+  <br> Choose your qualification:<br><br>
+    <select id="dropdown">
+      <option>High school</option>
+      <option>Diploma</option>
+      <option>College degree</option>
+      <option>Masters degree</option>
+    </select><br>
+    <br>
+    Do you have experience of programming:<br>
+    <input type="radio" id="" name="use" value="yes">Yes
+    <br><input type="radio" id="" name="use" value="no">No<br>
+  <br><br> If yes Which languages you have learned<br>
+    <input type="checkbox"  class="languages" name="lang" value="c">C<br>
+    <input type="checkbox"   name="lang" class="languages" name="lang" value="vb">Visual Basic<br>
+    <input type="checkbox"   name="lang" class="languages" name="lang" value="java">Java<br>
+    <input type="checkbox"   name="lang" class="languages" name="lang" value="python">Python
+    <br><br>
+ Any comments:<br>
+     <textarea rows="4" cols="50" id="textarea">
+    </textarea>
+<br>
+<input type="submit" value="Submit" id="submit">
+
+
+  </form>
+</div>
+</body>
+</html>
