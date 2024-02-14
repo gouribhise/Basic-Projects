@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #9facad;
+}
+
+main {
+  background-image: url("./background.png");
+  width: 60vw;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 5%;
+
+  display: flex;
+  box-shadow: 5px 10px #596161;
+}
+#home {
+  margin-left: 4%;
+  margin-top: 2;
+  width: 40vw;
+}
+#home > button {
+  position: absolute;
+  margin-top: 4vh;
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#arrow {
+  width: 45vw;
+}
+.fa-house {
+  font-size: 2rem;
+  border: 4px solid black;
+  border-radius: 50%;
+  padding: 10%;
+}
+
+#error {
+  color: white;
+}
+
+#number {
+  font-size: 5rem;
+  margin-left: -10vw;
+  margin-top: 15%;
+  width: 50vw;
+  font-weight: bold;
+}
+#number > span {
+  color: black;
+}
+#number > span:nth-child(2) {
+  color: lightgray;
+  text-shadow: 0 0 3px black, 0 0 5px #0000ff;
+}
+
+#error-msg {
+  margin-left: -10vw;
+  font-size: xx-small;
+  color: black;
+  background-color: white;
+  width: 55%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1%;
+  border: 5px solid black;
+}
+
+#back {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+  margin-left: -3vw;
+  background-color: white;
+  width: 30%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: black;
+}
+#back > div:first-child {
+  background-color: gray;
+  width: 50px;
+  height: 60px;
+  margin-top: -16px;
+  margin-left: -58px;
+  margin-bottom: -14px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.fa-rotate-left {
+  position: relative;
+  top: 18px;
+  left: 1px;
+  background-color: gray;
+  margin-left: 5%;
+  margin-top: -5%;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+#search {
+  background-color: #c4c4c4;
+  width: 400px;
+  padding: 2%;
+  margin-left: -15vw;
+  margin-top: 2%;
+}
+form {
+  border: 4px solid black;
+  display: flex;
+}
+
+form > div:first-child {
+  width: 80%;
+}
+form > div:nth-child(2) {
+  background-color: #191b18;
+  width: 40%;
+}
+.fa-search {
+  margin-left: 30px;
+}
+
+a:link {
+  color: black;
+}
+a:link:hover {
+  color: #596161;
+}
