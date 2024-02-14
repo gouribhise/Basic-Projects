@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Product Page" />
+    <meta name="author" content="Gouri Bhise" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="topnav" id="nav-bar">
+        <a href="#item1" class="active nav-link">Home</a>
+        <a href="#item2" class="nav-link">Men's Watches</a>
+        <a href="#item3" class="nav-link">Women's Watches</a>
+        <a href="#item4" class="nav-link">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <img id="header-img" src="" alt="" />
+    </header>
+    <div id="heroimg">
+      <div class="hero-text">
+        <h1 style="font-size: 3vw">Rolex Watches</h1>
+        <h4 style="font-size: 1vw">
+          A watch which can be dressed for every occasion
+        </h4>
+        <button>New Arrival</button>
+      </div>
+    </div>
+    <main>
+      <article id="item1">
+        <div class="whyus">
+          <h4>They are purpose built</h4>
+          <p>Rolex is really considered as the original 'tool watch'.</p>
+        </div>
+        <div class="whyus">
+          <h4>They're tough</h4>
+          <p>
+            The rolex explorer, for example, was created to be exceptionally
+            robust, with special lubricants in the movement that could withstand
+            extreme changes in temperature.
+          </p>
+        </div>
+        <div class="whyus">
+          <h4>It's okay accessories</h4>
+          <p>
+            One watch can so easily became many different watches simplay by
+            accesoring.
+          </p>
+        </div>
+      </article>
+      <article id="item2">
+        <div id="product">
+          <div class="pr">
+            <div class="primg">
+              <h4>Men's Watches</h4>
+              <img
+                src="https://content.rolex.com/dam/watches/hubs/collections/hub-watches-skydweller_m326934-0003_17tl_316.jpg?imwidth=560"
+                alt="mens watches"
+              />
+            </div>
+            <div class="prdesc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                tempus ullamcorper leo, non aliquet elit. Mauris lobortis nibh
+                diam, eget efficitur lorem fringilla ut. Donec sollicitudin
+                rutrum elit id semper. Donec leo metus, commodo sit amet cursus
+                sed, commodo rhoncus magna. Nulla dolor ipsum, bibendum vel
+                faucibus ac, placerat at orci. Cras sed auctor lectus, non
+                interdum purus. Sed enim mauris, feugiat venenatis pellentesque
+                nec, suscipit quis felis. Integer et ullamcorper elit. Sed
+                bibendum nisi at ex tempor auctor. Etiam convallis est et congue
+                efficitur.
+              </p>
+              <p>
+                Integer elementum tellus nec odio bibendum, ac ultricies massa
+                maximus. Praesent fringilla enim venenatis metus pharetra
+                ultricies. Cras vel sem mattis, pellentesque ipsum sit amet,
+                condimentum arcu. Fusce et mauris massa. Phasellus fermentum,
+                dolor bibendum vestibulum tincidunt, velit enim ullamcorper
+                tortor, sed ultrices ante ligula eu ligula.
+              </p>
+              <button><a href="#">Checkout the latest collection</a></button>
+            </div>
+          </div>
+          <br /><br />
+          <div class="prw" id="item3">
+            <div class="prdescw">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                tempus ullamcorper leo, non aliquet elit. Mauris lobortis nibh
+                diam, eget efficitur lorem fringilla ut. Donec sollicitudin
+                rutrum elit id semper. Donec leo metus, commodo sit amet cursus
+                sed, commodo rhoncus magna. Nulla dolor ipsum, bibendum vel
+                faucibus ac, placerat at orci. Cras sed auctor lectus, non
+                interdum purus. Sed enim mauris, feugiat venenatis pellentesque
+                nec, suscipit quis felis. Integer et ullamcorper elit. Sed
+                bibendum nisi at ex tempor auctor. Etiam convallis est et congue
+                efficitur.
+              </p>
+              <p>
+                Integer elementum tellus nec odio bibendum, ac ultricies massa
+                maximus. Praesent fringilla enim venenatis metus pharetra
+                ultricies. Cras vel sem mattis, pellentesque ipsum sit amet,
+                condimentum arcu. Fusce et mauris massa. Phasellus fermentum,
+                dolor bibendum vestibulum tincidunt, velit enim ullamcorper
+                tortor, sed ultrices ante ligula eu ligula.
+              </p>
+              <button><a href="#">Checkout the latest collection</a></button>
+            </div>
+            <div class="primgw">
+              <h4>Women's Watches</h4>
+              <img
+                src="https://content.rolex.com/dam/watches/hubs/collections/hub-watches-pearlmaster_pearlmaster_39-m86289-0001-18tl-2078.jpg?imwidth=560"
+                alt="womens watches"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <video id="video" src=""></video>
+      <article id="item4">
+        <div id="contact">
+          <h4 style="text-align: center">Subscribe Our Newsletter</h4>
+          <p>Get the latest deals information right in your inbox.</p>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="post"
+          >
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              name="email"
+            />
+            <input type="submit" value="submit" id="submit" />
+          </form>
+        </div>
+      </article>
+    </main>
+    <footer>All rights reserved</footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-bar");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #be3144;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  height: 12%;
+}
+#navbar a {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 2%;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 400;
+
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: #45567d;
+}
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+
+  background-color: #303134;
+  color: white;
+  align-items: center;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+#welcome-section h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+  color: white;
+  font-size: 5rem;
+}
+
+#welcome-section h4 {
+  font-size: 3rem;
+  color: #be3144;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*project section*/
+#projects {
+  background-color: #45567d;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+#projects h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2%;
+  color: white;
+  font-weight: 300;
+}
+hr {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  height: 10px;
+  background-color: white;
+  margin-bottom: 2%;
+}
+.work {
+  display: flex;
+  justify-content: space-around;
+}
+.project-tile {
+  border: 1px solid black;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  width: 24vw;
+}
+img {
+  object-fit: cover;
+  object-position: 5% 5%;
+}
+.project-tile h4 {
+  background-color: #303841;
+  margin-top: -10px;
+  font-size: 1.2rem;
+  padding: 10%;
+  text-align: center;
+}
+.project-tile h4 > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.project-tile h4 > a:hover::before {
+  content: "< ";
+  color: red;
+  width: 200px;
+}
+.project-tile h4 > a:hover::after {
+  content: " /> ";
+  color: red;
+  width: 200px;
+}
+img {
+  width: 100%;
+  height: 150px;
+}
+
+/**contact*/
+#contact {
+  height: 100vh;
+  background-color: #303841;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h1 {
+  margin-top: 7%;
+  font-size: 4rem;
+  padding: 5%;
+}
+
+#contact h4 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: -4%;
+  color: lightgray;
+}
+#social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social_text {
+  margin-left: 25px;
+  letter-spacing: 2px;
+}
+i {
+  margin-top: 4%;
+  font-size: 2rem;
+  margin-left: 55px;
+  margin-bottom: 4%;
+}
+
+i a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: #303841;
+  border-top: 5px solid #be3144;
+  height: 70px;
+}
+
+footer p {
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 468px) {
+  #navbar {
+    display: block;
+    height: 200px;
+    overflow: visible;
+  }
+  #welcome-section h1 {
+    font-size: 2.3rem;
+    margin-top: 200px;
+  }
+  #welcome-section h4 {
+    font-size: 1.6rem;
+  }
+  #projects h1 {
+    font-size: 2.3rem;
+  }
+  #projects hr {
+    height: 3px;
+  }
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-tile {
+    display: block;
+    width: 100%;
+  }
+  .work {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
