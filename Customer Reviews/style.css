@@ -1,10 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-text-size-adjust: none;
+
+  -moz-text-size-adjust: none;
+
+  -webkit-text-size-adjust: none;
+
+  -ms-text-size-adjust: none;
+
+  font-size-adjust: none;
 }
 
 body {
   background-color: #f8f8fa;
+  font-size: rem;
+  /*10/12=0.833, font-size:10px*/
 }
 
 main {
@@ -24,13 +35,41 @@ main {
   font-weight: bold;
   letter-spacing: 0.5mm;
 }
-
 #direction {
   background-color: #e1fae5;
   padding: 1%;
   border: none;
   border-radius: 10px;
 }
+#heading-dropdown {
+  margin-right: 10vw;
+}
+select {
+  background-color: white;
+  padding: 4%;
+  width: 100%;
+  cursor: pointer;
+  border: 3px solid #f8f8fa;
+  border-radius: 3px;
+}
+progress::-moz-progress-bar {
+  background: lightblue;
+}
+#graph > ol > li > span {
+  font-size: 1rem;
+}
+#summary {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 10px solid #f8f8fa;
+  padding-bottom: 2%;
+}
+.user-details > div > p {
+  font-size: 0.5rem;
+  transform: scale(1.2); /*10/12=0.833, font-size:10px*/
+}
+
 #total,
 #stars {
   padding: 2%;
@@ -44,49 +83,23 @@ p:nth-child(3) {
   color: gray;
   font-size: 0.5rem;
 }
-#stars > p:nth-child(2),
-p:nth-child(3) {
-  margin-top: 2%;
-}
-#stars > p:nth-child(3) {
-  color: gray;
-  font-size: 0.5rem;
-}
-#heading-dropdown {
-  margin-right: 10vw;
-}
-select {
-  background-color: white;
-  padding: 4%;
-  width: 100%;
-  cursor: pointer;
-  border: 3px solid #f8f8fa;
-  border-radius: 3px;
-}
+
 .fa-star {
   color: #f7ba2b;
 }
-progress::-moz-progress-bar {
-  background: lightblue;
-}
-#summary {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 10px solid #f8f8fa;
-  padding-bottom: 2%;
-}
+
 ol > li > span {
   font-size: 0.5rem;
 }
+/*reviews section*/
 #reviews-section {
   display: flex;
   flex-direction: column;
   margin-top: 4%;
 }
 
-#reviews-section > article {
-  margin-left: 2vw;
+.user-review > div > span:nth-child(2) {
+  font-size: 24px !important;
 }
 .reviews {
   display: flex;
@@ -111,10 +124,10 @@ ol > li > span {
   width: 30vw;
 }
 h4 {
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 .user-details > div > p {
-  font-size: 0.5rem;
+  font-size: 1rem;
   color: gray;
 }
 .user-details > div > p > b {
@@ -136,7 +149,7 @@ h4 {
 }
 .user-review > p {
   color: #58646d;
-  font-size: 0.6rem;
+  font-size: 1rem;
 
   font-weight: lighter;
 }
@@ -153,7 +166,7 @@ h4 {
   padding-right: 4%;
   border: 1px solid lightgray;
   border-radius: 10px;
-  font-size: 0.1rem;
+  font-size: 1rem;
   font-weight: 500;
   background-color: white;
   display: inline-block;
@@ -163,6 +176,9 @@ h4 {
 #button2:hover {
   background-color: #add8e6;
   color: white;
+}
+.fa-heart {
+  font-size: 24px;
 }
 .fa-heart:hover {
   color: #add8e6;
