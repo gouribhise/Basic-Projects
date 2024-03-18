@@ -176,9 +176,11 @@ h4 {
 #button2:hover {
   background-color: #add8e6;
   color: white;
+  cursor: pointer;
 }
 .fa-heart {
   font-size: 24px;
+  cursor:pointer;
 }
 .fa-heart:hover {
   color: #add8e6;
